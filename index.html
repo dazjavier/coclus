@@ -17,15 +17,16 @@
         <a href="/">
           <img src="img/logo_coclus.png" data-rjs="2" alt="Coclus">
         </a>
-        <nav class="menu">
-          <a href="#">Inicio</a>
-          <a href="#">Qué es Coclus</a>
-          <a href="#">Cómo funciona</a>
+        <nav class="menu scroll">
+          <a href="#landing">Inicio</a>
+          <a href="#que_es">Qué es Coclus</a>
+          <a href="#como_funciona">Cómo funciona</a>
+          <a href="#historia">Historia</a>
         </nav>
       </header>
       <div class="info">
         <div>
-          <h1>Únete a la mejor comunidad  online de la discapacidad auditiva</h1>
+          <h1>Únete a la mayor comunidad  online de la discapacidad auditiva</h1>
           <h4>¡Regístrate hoy mismo!</h4>
           <form action="#" class="form__registro">
             <input type="email" class="email__registro" id="email__registro" name="email" placeholder="Email">
@@ -35,7 +36,7 @@
       </div>
     </div>
   </div>
-  <div class="que_es">
+  <div class="que_es" id="que_es">
     <div class="container que_es_container">
       <img src="img/world.png" class="col-lg-4 col-md-3 col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" />
       <div class="col-lg-8 col-md-9 col-sm-8 col-xs-12 info__que-es">
@@ -44,10 +45,10 @@
       </div>
     </div>
   </div>
-  <div class="como_funciona">
+  <div class="como_funciona" id="como_funciona">
     <div class="container_fluid como-funciona__container">
       <h2 class="title">¿Cómo funciona?</h2>
-      <h5 class="subtitle">Coclus ofrecerá inicialmente tres planes:</h5>
+      <h5 class="subtitle">Coclus ofrecerá inicialmente tres perfiles:</h5>
 
       <div class="persona">
         <img src="img/persona_sorda.png" alt="Persona Sorda">
@@ -105,12 +106,12 @@
       </div>
     </div>
   </div>
-  <div class="historia">
+  <div class="historia" id="historia">
     <div class="container historia__container">
       <div class="row">
         <div class="col-md-8">
           <h2 class="title">La historia de Coclus</h2>
-          <p>Matías Donoso, nació con una discapacidad auditiva profunda, lo cual actualmente utiliza audífono y implante coclear. Durante en su trayectoria despertó un gran interés en relación con la comunidad de la discapacidad auditiva, dando cuenta desde su propia experiencia y viendo la de los demás que es un área poco explorada. lo cual le motivo a emprender con el objetivo de facilitar y optimizar herramientas para la comunidad referida y demostrar que la discapacidad auditiva no es un impedimento, sino un desafío</p>
+          <p>Matías Donoso nació con una discapacidad auditiva profunda, por lo cual actualmente utiliza audífono e implante coclear. Durante su trayectoria, despertó un gran interés en relación con la comunidad de la discapacidad auditiva, dando cuenta desde su propia experiencia y viendo la de los demás, que es un área poco explorada. Esto lo motivó a emprender con el objetivo de facilitar y optimizar herramientas para la comunidad referida y demostrar que la discapacidad auditiva no es un impedimento, sino un desafío.</p>
         </div>
         <div class="col-md-4">
           <img src="img/history-matias.png" alt="Matías Donoso -- CEO & Founder">
@@ -141,14 +142,15 @@
       </div>
       <div class="row">
         <div class="col-md-7 col-xs-12">
-          <nav class="menu__footer">
-            <a href="#">Inicio</a>
-            <a href="#">Qué es Coclus</a>
-            <a href="#">Cómo funciona</a>
+          <nav class="menu__footer scroll">
+            <a href="#landing">Inicio</a>
+            <a href="#que_es">Qué es Coclus</a>
+            <a href="#como_funciona">Cómo funciona</a>
+            <a href="#historia">Historia</a>
           </nav>
         </div>
         <div class="col-md-5 col-xs-12">
-          <p>Síguenos en las redes sociales &nbsp;&nbsp;&nbsp; <a href="#"><img src="img/fb.png" alt=""></a>&nbsp;&nbsp;<a href="#"><img src="img/tw.png" alt=""></a></p>
+          <p>Síguenos en las redes sociales &nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/coclus/"><img src="img/fb.png" alt=""></a>&nbsp;&nbsp;<a href="#"><img src="img/tw.png" alt=""></a></p>
         </div>
       </div>
     </div>
@@ -158,6 +160,7 @@
   </div>
   <script src="./js/libraries/jquery.min.js"></script>
   <script src="./js/plugins/retina.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
   <script src="./js/app.js"></script>
 </body>
 </html>
