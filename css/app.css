@@ -1,0 +1,361 @@
+/* **************
+ *
+ * General Styles
+ *
+*************** */
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+/***************
+ *
+ * Landing
+ *
+****************/
+
+.landing {
+  background-image: url('../img/bg-landing.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.landing_container {
+  padding-top: 30px;
+  min-height: 100vh;
+}
+header {
+          display: flex;
+  -webkit-display: flex;
+  align-items: center;
+}
+.menu {
+  margin-left: auto;
+}
+.menu a{
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.info {
+  display: table;
+  height: 75vh;
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+}
+.info div {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+.info > div > h1{
+  color: white;
+  font-weight: 900;
+  margin-top: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info > div > h4 {
+  color: white;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: .6;
+}
+
+.form__registro {
+  padding-top: 15px;
+}
+.form__registro input[type="email"],
+.form__registro input[type="submit"] {
+  border-radius: 3px;
+  font-size: 13px;
+  margin: 15px auto;
+  max-width: 100%;
+  min-height: 65px;
+  outline: none;
+  text-transform: uppercase;
+  width: 300px;
+}
+
+.email__registro {
+  border: 3px solid #4F1E4D;
+  padding: 10px;
+}
+.form__registro > .btnRegistro {
+  -moz-transition: background .2s ease;
+  -o-transition: background .2s ease;
+  -webkit-transition: background .2s ease;
+  background: #4F1E4D;
+  border: none;
+  color: #fff;
+  transition: background .2s ease;
+}
+.info > div > form >.btnRegistro:hover {
+  background: #533C60;
+  text-decoration: none;
+}
+
+
+/***************
+ *
+ * Qué es
+ *
+****************/
+.que_es_container {
+  display: table;
+  margin-top: 70px;
+}
+.info__que-es {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.info__que-es h2 {
+  color: #4F1E4D;
+}
+
+.info__que-es p {
+  color: #989898;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+@media (max-width: 1920px) and (min-width: 1200px) {
+  .info__que-es {
+    padding-top: 70px;
+  }
+}
+
+/***************
+ *
+ * Cómo funciona
+ *
+****************/
+
+.como_funciona {
+  background-size: cover;
+  background: url('../img/bg-how-works.png') no-repeat center center;
+  margin-top: 100px;
+  min-height: 1100px;
+}
+.como-funciona__container {
+  text-align: center;
+}
+.como-funciona__container h2,
+.como-funciona__container h5 {
+  color: #4F1E4D;
+}
+
+.persona {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+.persona img {
+  margin: 0 50px;
+}
+.persona p {
+  color: #3E3E3E;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .persona {
+    display: block;
+  }
+
+  .familia {
+    max-width: 70%;
+  }
+}
+
+.caracteristicas {
+  margin-top: -70px;
+}
+.caracteristica {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.caracteristica img {
+  margin-bottom: 30px;
+}
+.caracteristica p {
+  color: #4F1E4D;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+/***************
+ *
+ * Historia
+ *
+****************/
+
+.historia {
+  align-items: center;
+  background-color: rgba(65, 36, 75, .75);
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  padding: 50px;
+}
+
+@media (max-width: 400px) {
+  .historia {
+    padding: 0 0 50px 0;
+  }
+}
+
+.historia__container h2 {
+  color: white;
+}
+
+.historia__container p {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  opacity: .75;
+  padding-top: 30px;
+  text-align: justify;
+}
+
+.historia__container img {
+ min-width: 100%;
+}
+
+/***************
+ *
+ * Nos apoyan
+ *
+****************/
+.apoyo {
+  background-color: #EEEEEE;
+  min-height: 200px;
+}
+.apoyo__container { text-align: center; }
+.apoyo__container h2 { color: #7E7E7E; }
+
+.logos {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos li {
+  display: inline-block;
+  padding: 0 35px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logos li { padding: 0 15px; }
+}
+@media screen and (max-width: 992px) {
+  .logos li { padding: 40px; }
+}
+@media screen and (max-width: 768px) {
+  .logos li { padding: 35px; }
+}
+
+
+/***************
+ *
+ * Footer
+ *
+****************/
+.footer {
+  background: rgba(65, 36, 75, 1) url('../img/bg-footer.png');
+  background-size: cover;
+  padding: 50px 0;
+  min-height: 280px;
+}
+
+.logo__foter {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.menu__footer a{
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+.footer p {
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .menu__footer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer p { text-align: center !important; }
+}
+@media (max-width: 768px) {
+  .menu__footer {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer p { text-align: center !important; }
+}
+
+@media (max-width: 480px) {
+  .menu__footer a { padding: 0 5px; }
+}
+
+
+/***************
+ *
+ * Subfooter
+ *
+****************/
+
+.subfooter {
+  min-height: 50px;
+}
+.subfooter p {
+  margin: 0; padding: 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 13px;
+  font-weight: 600;
+}
