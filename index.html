@@ -7,10 +7,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coclus</title>
   <link rel="stylesheet" href="./css/addons/bootstrap.css" />
+  <link rel="stylesheet" href="./css/addons/animate.css" />
   <link rel="stylesheet" href="./css/app.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet"> -->
 </head>
 <body>
+  <div class="modalBg" id="profiles">
+    <div class="profile">
+      <button type="button" class="close closeModal"><span aria-hidden="true">&times;</span></button>
+
+      <h3 class="modal-title">Selecciona tu tipo de perfil:</h3>
+      <ul class="perfiles">
+        <li class="perfil">
+          <a href="#" data-href="persona_sorda">
+            <img src="img/persona_sorda.png" alt="Persona Sorda" data-href="persona_sorda">
+            <p data-href="persona_sorda">Persona Sorda</p>
+          </a>
+        </li>
+        <li class="perfil">
+          <a href="#" data-href="familiar">
+            <img src="img/familia.png" alt="Persona Sorda" data-href="familiar">
+            <p data-href="familiar">Familiar de Persona Sorda</p>
+          </a>
+        </li>
+        <li class="perfil">
+          <a href="#" data-href="profesional">
+            <img src="img/doctor.png" alt="Persona Sorda" data-href="profesional">
+            <p data-href="profesional">Profesional del Área</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="landing">
     <div class="container landing_container">
       <header>
@@ -27,10 +55,11 @@
       <div class="info">
         <div>
           <h1>Únete a la mayor comunidad  online de la discapacidad auditiva</h1>
-          <h4>¡Regístrate hoy mismo!</h4>
-          <form action="#" class="form__registro">
+          <h4>¡Regístrate para recibir más información y prepárate para tu integración a la comunidad!</h4>
+          <form action="./lib/register.php" id="form__registro" class="form__registro">
             <input type="email" class="email__registro" id="email__registro" name="email" placeholder="Email">
             <input type="submit" name="btnRegistro" class="btnRegistro" value="Registrarse">
+            <span class="form__info"></span>
           </form>
         </div>
       </div>
@@ -41,7 +70,7 @@
       <img src="img/world.png" class="col-lg-4 col-md-3 col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0 col-md-offset-0 col-lg-offset-0" />
       <div class="col-lg-8 col-md-9 col-sm-8 col-xs-12 info__que-es">
         <h2 class="title">¿Qué es?</h2>
-        <p>Coclus es la mejor plataforma social de la comunidad de la discapacidad auditiva que te permitirá conectarte con las personas que tengan las mismas necesidades e intereses.</p>
+        <p>Coclus es la plataforma social para la comunidad de la discapacidad auditiva que te permitirá interactuar con personas que tengan las mismas necesidades e intereses que tú.</p>
       </div>
     </div>
   </div>
@@ -68,41 +97,21 @@
     <div class="row">
       <div class="col-sm-6 caracteristica">
         <img src="img/share-01.png" alt="Compartir">
-        <p>Donde se te permitirá conectarte con los usuarios que tengan tus mismas necesidades e intereses.</p>
+        <p>Podrás conectarte con los usuarios de la comunidad para compartir experiencias y datos útiles.</p>
       </div>
-      <div class="col-sm-6 caracteristica">
-        <img src="img/info-01.png" alt="Acceso">
-        <p>Tendrás el acceso a toda la información relacionado con la discapacidad auditiva.</p>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-sm-6 caracteristica">
         <img src="img/config-01.png" alt="Servicios">
-        <p>Te ofreceremos una gran variedad de servicios que te permitirá facilitar tu calidad de vida.</p>
+        <p>Te ofreceremos una variedad de servicios e información que te permitirá mejorar tu calidad de vida y facilitar la inclusión.</p>
       </div>
+    </div>
+    <div class="row">
       <div class="col-sm-6 caracteristica">
         <img src="img/cart-01.png" alt="Compra de Productos">
-        <p>Podrás encontrar una gran variedad de catalogo de productos relacionado con la discapacidad auditiva.</p>
+        <p>Encontrarás catálogos de productos y servicios profesionales relacionados con la discapacidad auditiva.</p>
       </div>
-    </div>
-    <div class="row">
       <div class="col-sm-6 caracteristica">
         <img src="img/person-01.png" alt="Programas Educativos">
-        <p>Podrás encontrar una gran variedad de programas educativos y juegos relacionado con la discapacidad auditiva.</p>
-      </div>
-      <div class="col-sm-6 caracteristica">
-        <img src="img/bell-01.png" alt="Deberes">
-        <p>Ofrecemos facilitar tus deberes con tus aparatos auditivos.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 caracteristica">
-        <img src="img/crowdfunding-01.png" alt="Crowdfunding">
-        <p>Ofrecemos el sistema para organizar un evento para recaudar fondos relacionado con la discapacidad auditiva.</p>
-      </div>
-      <div class="col-sm-6 caracteristica">
-        <img src="img/calendar-01.png" alt="Calendario">
-        <p>Tendrás la opción de estar informado siempre de eventos en relación a la discapacidad auditiva y inclusión.</p>
+        <p>Tendrás a tu disposición variados programas educativos y juegos relacionados con la discapacidad auditiva.</p>
       </div>
     </div>
   </div>
@@ -111,10 +120,11 @@
       <div class="row">
         <div class="col-md-8">
           <h2 class="title">La historia de Coclus</h2>
-          <p>Matías Donoso nació con una discapacidad auditiva profunda, por lo cual actualmente utiliza audífono e implante coclear. Durante su trayectoria, despertó un gran interés en relación con la comunidad de la discapacidad auditiva, dando cuenta desde su propia experiencia y viendo la de los demás, que es un área poco explorada. Esto lo motivó a emprender con el objetivo de facilitar y optimizar herramientas para la comunidad referida y demostrar que la discapacidad auditiva no es un impedimento, sino un desafío.</p>
+          <p>Matías Donoso nació con sordera profunda, y es usuario de audífono e implante coclear. Desde su infancia ha desarrollado vínculos con la comunidad de la discapacidad auditiva, compartiendo con los demás su propia experiencia y las restricciones y dificultades que deben enfrentar las personas que viven una realidad similar. Esto lo ha motivado a desarrollar modernas herramientas que faciliten la vida de esta poco conocida comunidad y transformar así la discapacidad auditiva, desde la simple visión de un impedimento a un desafío factible de transitar en el desarrollo personal.</p>
         </div>
-        <div class="col-md-4">
-          <img src="img/history-matias.png" alt="Matías Donoso -- CEO & Founder">
+        <div class="col-md-4 matias">
+          <img src="img/history-matias.png" alt="Matías Donoso &ndash; CEO & Founder">
+          <p>Matías donoso &ndash; CEO & Founder</p>
         </div>
       </div>
     </div>
@@ -160,7 +170,7 @@
   </div>
   <script src="./js/libraries/jquery.min.js"></script>
   <script src="./js/plugins/retina.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+  <!-- <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script> -->
   <script src="./js/app.js"></script>
 </body>
 </html>

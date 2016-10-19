@@ -20,6 +20,60 @@ body {
   font-weight: 100;
 }
 
+/***************
+ *
+ * Modal
+ *
+****************/
+
+
+.modalBg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .75);
+  z-index: 999;
+  text-align: center;
+}
+
+.profile {
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: aboslute;
+  width: 715px;
+  max-width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+h3.modal-title {
+  margin-top: 25px;
+}
+
+ul.perfiles {
+  list-style: none;
+  margin-top: 50px;
+}
+
+ul.perfiles li { display: inline-block; }
+ul.perfiles li img { max-width: 80%;}
+ul.perfiles li:nth-child(2) img { max-width: 70%; }
+
+ul.perfiles li p {
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+ul.perfiles li a { color: rgba(65, 36, 75, 1); text-decoration: none; }
 
 /***************
  *
@@ -112,6 +166,20 @@ header {
   color: #fff;
   transition: background .2s ease;
 }
+
+.form__registro > .form__info {
+  color: white;
+  display: block;
+  font-size: 13px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form__registro > .form__info_error {
+  color: red;
+}
+
 .info > div > form >.btnRegistro:hover {
   background: #533C60;
   text-decoration: none;
@@ -251,6 +319,13 @@ header {
 
 .historia__container img {
  min-width: 100%;
+}
+
+.matias p {
+  font-size: 13px;
+  font-style: italic;
+  margin-top: -20px;
+  text-align: center;
 }
 
 /***************
